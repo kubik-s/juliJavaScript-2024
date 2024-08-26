@@ -83,7 +83,7 @@ function cyclesLi(text3, count ) {
         document.write(`</ul>`);
     }
 }
-cyclesLi( 'hello, my friend', 3);
+cyclesLi( 'hello, my friend', 4);
 
 // #gEFoxMMO
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список (ul li) та виводить його через document.write
@@ -103,21 +103,15 @@ list(elements);
 
 // #bovDJDTIjt
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
-let data =[
+data ([
 { id:1, name:'john',age: 25,},
 { id:2, name:'anna',age: 16,},
 { id:3, name:'denis',age: 31,}
-]
-function form(data) {
-    for (const obj of data) {
-        document.write(`<ul>`)
-        for (const key in obj) {
-            document.write(` <li>${key} : ${obj[key]}</li>`)
-        }
-        document.write(`<ul/>`)
-    }
+]);
+function data(users){
+    for(const user of users)
+    document.write(`<div> ${user.id} ${user.name} ${user.age} </div>`)
 }
-form(data);
 //     #pghbnSB
 // - створити функцію яка повертає найменьше число з масиву
 
