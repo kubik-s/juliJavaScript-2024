@@ -8,7 +8,12 @@ block.classList.add('alpha');
 block.classList.add('beta');
 block.textContent = 'Good things take time'
 // - додати стилі(довільні значення) : колір фону, колір тексту, розмір тексту
-//---------------------------стилізувала в HTML файлі---------------------------//
+
+
+block.style.backgroundColor = 'lightblue';
+block.style.color = 'white';
+block.style.fontStyle ='italic'
+block.style.fontSize = '30px';
 
 // - додати цей блок в body.
 document.body.appendChild(block);
